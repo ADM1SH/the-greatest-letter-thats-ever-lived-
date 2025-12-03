@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+}
+
+.star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+}
+
+.crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+
+.crawl > .title {
+    font-size: 90%;
+    text-align: center;
+}
+
+.crawl > .title > p {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+}
+
+.crawl > .title > h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+}
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+
+/* Upgraded pure CSS starfield */
+@keyframes twinkle {
+  0% { opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    1813px 1274px #FFF, 1269px 1285px #FFF, 154px 1230px #FFF, 1205px 1237px #FFF, 1033px 107px #FFF, 1083px 1863px #FFF, 1902px 145px #FFF, 93px 1136px #FFF, 1025px 1944px #FFF, 1879px 1802px #FFF, 1032px 1293px #FFF, 1827px 1109px #FFF, 1469px 933px #FFF, 1262px 426px #FFF, 1335px 955px #FFF, 354px 1754px #FFF, 566px 166px #FFF, 1374px 93px #FFF, 1488px 1563px #FFF, 1419px 584px #FFF, 1689px 1673px #FFF, 1782px 767px #FFF, 1493px 432px #FFF, 1200px 184px #FFF, 478px 1853px #FFF, 1002px 1845px #FFF, 1599px 1238px #FFF, 112px 183px #FFF, 1683px 1013px #FFF, 124px 544px #FFF, 42px 1545px #FFF, 1849px 1068px #FFF, 540px 100px #FFF, 126px 1312px #FFF, 1111px 1324px #FFF, 532px 108px #FFF, 1259px 1230px #FFF, 1331px 1098px #FFF, 49px 433px #FFF, 1290px 1328px #FFF, 396px 1195px #FFF, 1583px 1581px #FFF, 95px 199px #FFF, 64px 160px #FFF, 1192px 697px #FFF, 332px 1560px #FFF, 1840px 1338px #FFF, 1863px 1020px #FFF, 1192px 180px #FFF, 1126px 746px #FFF, 280px 134px #FFF, 1395px 1256px #FFF, 1530px 1193px #FFF;
+  animation: twinkle 5s infinite;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    1681px 1199px #FFF, 584px 1774px #FFF, 1013px 1146px #FFF, 1445px 569px #FFF, 1447px 193px #FFF, 949px 1693px #FFF, 109px 1333px #FFF, 1483px 122px #FFF, 1094px 100px #FFF, 148px 1208px #FFF, 401px 1898px #FFF, 1381px 1475px #FFF, 1420px 1851px #FFF, 1018px 1071px #FFF, 110px 1762px #FFF, 1261px 1803px #FFF, 1794px 1018px #FFF, 1360px 1385px #FFF, 1502px 1344px #FFF, 368px 1244px #FFF, 1806px 1533px #FFF, 752px 126px #FFF, 1460px 363px #FFF, 1223px 165px #FFF, 137px 1230px #FFF, 1157px 146px #FFF, 1630px 1600px #FFF, 1491px 1436px #FFF, 989px 1060px #FFF, 1638px 1139px #FFF, 726px 956px #FFF, 1159px 1653px #FFF, 1289px 1653px #FFF, 1203px 110px #FFF, 1225px 902px #FFF, 1238px 107px #FFF, 175px 143px #FFF, 1294px 938px #FFF, 1548px 1563px #FFF, 1084px 505px #FFF;
+  animation: twinkle 7s infinite;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 
+    173px 311px #FFF, 1786px 1391px #FFF, 442px 1709px #FFF, 184px 914px #FFF, 882px 1740px #FFF, 1636px 126px #FFF, 1339px 240px #FFF, 383px 1300px #FFF, 804px 580px #FFF, 1162px 1830px #FFF, 1827px 1124px #FFF, 1595px 1001px #FFF, 1735px 1799px #FFF, 1764px 395px #FFF, 545px 135px #FFF, 113px 131px #FFF, 1503px 1238px #FFF, 1113px 1297px #FFF, 1143px 1729px #FFF, 1339px 1253px #FFF, 128px 127px #FFF, 439px 1386px #FFF, 770px 1339px #FFF, 1121px 406px #FFF, 461px 639px #FFF, 1017px 116px #FFF, 1147px 103px #FFF, 971px 832px #FFF, 1788px 1144px #FFF, 621px 1849px #FFF;
+  animation: twinkle 10s infinite;
+}
+
+/* Shooting star animation */
+#shooting-stars {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#shooting-stars::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(0, 0, 255, 0));
+    width: 100px;
+    animation: shooting-star-animation 10s linear infinite;
+    animation-delay: 2s;
+}
+
+#shooting-stars::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 100%;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(0, 0, 255, 0));
+    width: 200px;
+    animation: shooting-star-animation 15s linear infinite;
+}
+
+@keyframes shooting-star-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(2500px);
+    }
+}
